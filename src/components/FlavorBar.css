@@ -1,0 +1,36 @@
+.flavor-bar {
+  margin-bottom: 10px;
+}
+
+.flavor-bar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.flavor-bar__name {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.flavor-bar__value {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+}
+
+.flavor-bar__track {
+  height: 5px;
+  background: rgba(201, 146, 42, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.flavor-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-orange));
+  border-radius: 3px;
+  transition: width 0.6s ease-out;
+}

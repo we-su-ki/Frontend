@@ -1,0 +1,77 @@
+.footer {
+  background: #080503;
+  border-top: 1px solid var(--border);
+  padding: 0;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 16px;
+}
+
+/* Logo */
+.footer__logo {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.footer__logo-we {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.footer__logo-colon {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--accent-gold);
+  opacity: 0.6;
+  margin: 0 1px;
+}
+
+.footer__logo-suki {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.95rem;
+  color: var(--accent-gold);
+  opacity: 0.6;
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__link {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.footer__link:hover {
+  color: var(--accent-gold);
+}
+
+@media (max-width: 640px) {
+  .footer__inner {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+  }
+}
